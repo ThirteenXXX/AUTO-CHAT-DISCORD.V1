@@ -109,20 +109,12 @@ def rotate_api_key():
 last_message_id = None
 
 prompts = {
-    "airdrop": "{user_message}\nRespond with short answers no more than 50 letter like an airdrop hunter:",
-    "grinding": "{user_message}\nRespond with short answers no more than 50 letter like someone who focuses on grinding:",
-    "gamers": "{user_message}\nRespond with short answers no more than 50 letter like a pro player in all games:",
-    "trader": "{user_message}\nRespond with short answers no more than 50 letter like a pro trader:",
-    "topic_finder": "{user_message}\nRespond with short answers, no more than 50 letter, engaging, and thoughtful reply like someone who is great at finding interesting topics to discuss:"
+    "grinding": "{user_message}\nRespond with nigerian accent and short answers no more than 50 letter like someone who focuses on grinding:",
 }
 
 # Tambahkan kata kunci baru di bagian keywords
 keywords = {
-    "airdrop": ["airdrop", "zealy", "Galxe", "Questn", "Gleam", "Retro" "token", "coin"],
     "grinding": ["grinding", "level", "rank"],
-    "gamers": ["game", "game PC", "game android", "game ios", "app store", "playstore"],
-    "trader": ["trading", "scalping", "future", "spot"],
-    "topic_finder": ["topic", "conversation", "chat", "ideas"]
 }
 
 kata_kunci_tentang_bot = [
@@ -222,7 +214,7 @@ if not bot_id:
 replay_mode = input("𝙿𝙸𝙻𝙸𝙷 𝙼𝙴𝚃𝙷𝙾𝙳𝙴 𝚁𝙴𝙿𝙻𝙰𝚈:\n1. 𝚁𝙴𝙿𝙻𝙰𝚈 𝙿𝙴𝚂𝙰𝙽 𝚃𝙴𝚁𝙱𝙰𝚁𝚄\n2. 𝚁𝙴𝙿𝙻𝙰𝚈 𝙿𝙴𝚂𝙰𝙽 𝚃𝙰𝚁𝙶𝙴𝚃 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴\n𝙿𝙸𝙻𝙸𝙷 𝙼𝙴𝚃𝙷𝙾𝙳𝙴 (1/2): ").strip()
 
 if replay_mode == "2":
-    target_usernames = input("𝙼𝙰𝚂𝚄𝙺𝙰𝙽 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 𝚃𝙰𝚁𝙶𝙴𝚃: ").strip().split(',')
+    target_usernames = input("𝙼𝙰𝚂𝚄𝙺𝙰𝙽 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 𝚃𝙰𝚁𝙶𝙴𝚃 (pisahkan dengan koma): ").strip().split(',')
     target_usernames = [username.strip() for username in target_usernames]
 else:
     target_usernames = []
